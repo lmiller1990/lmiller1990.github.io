@@ -1,0 +1,38 @@
+* {
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+}
+
+.header {
+  text-align: center;
+}
+
+.experience__title {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0 0 0;
+}
+
+.mobile {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .experience__title {
+    flex-direction: column;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+}
+
+.divider {
+  width: 100%;
+  margin-top: 20px;
+  border-top: 1px solid silver;
+}
+
